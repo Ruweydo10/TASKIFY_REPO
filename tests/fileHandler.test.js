@@ -1,4 +1,5 @@
 const { writeTasksToFile, readTasksFromFile } = require('../utils/fileHandler');
+
 const fs = require('fs');
 
 jest.mock('fs');
@@ -44,6 +45,7 @@ describe('fileHandler', () => {
       fs.readFileSync.mockReturnValue('[]');
       const result = readTasksFromFile();
       expect(result).toEqual([]);
+      
     });
   });
 });

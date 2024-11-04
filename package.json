@@ -2,9 +2,10 @@
   "name": "taskify",
   "version": "1.0.0",
   "main": "app.js",
+
   "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js",
+    "start": " node app.js ",
+    "dev": " node --watch app.js ",
     "test": "jest"
   },
   "keywords": [],
